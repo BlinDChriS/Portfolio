@@ -11,12 +11,9 @@
         <meta http-equiv="Content-Type" content="text/html" />
         <meta name="author" content="BlinDChriS">
         <link rel="shortcut icon" href="favicon.ico">
-
-
-        <!--======================================== Bootstrap CSS ========================================-->
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
-        <!--======================================== FONTS ========================================-->
+        <!--======================================== POLICES ========================================-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -24,58 +21,16 @@
             type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
         
-        <!--======================================== MAP CSS ========================================-->
+        <!--======================================== MAP LEAFLET ========================================-->
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"/>
 
-        <!--======================================== My CSS ========================================-->
+        <!--======================================== MON CSS ========================================-->
         <link href="css/blindchris.css" rel="stylesheet">
-
-
-
-
-
-
 
         <!-- MAPBOX SCRIPT -->
 
-        <!-- Nous chargeons les fichiers CDN de Leaflet. Le CSS AVANT le JS -->
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"/>
-        <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
 		<script type="text/javascript">
-			// On initialise la latitude et la longitude de Paris (centre de la carte)
-			var lat = 47.23464;
-			var lon = 6.02069;
-            var macarte = null;
-            // Nous initialisons une liste de marqueurs
-            var villes = {
-                "Besançon": { "lat": 47.23464, "lon": 6.02069 },
-                "Antony": { "lat": 48.7358961, "lon": 2.3038353 }
-            };
-			// Fonction d'initialisation de la carte
-			function initMap() {
-				// Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
-                macarte = L.map('map').setView([lat, lon], 17);
-                // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
-                L.tileLayer('//{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-                    // Il est toujours bien de laisser le lien vers la source des données
-                    attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
-                    minZoom: 1,
-                    maxZoom: 20
-                }).addTo(macarte);
-                // Nous parcourons la liste des villes
-	            for (ville in villes) {
-                var marker = L.marker([villes[ville].lat, villes[ville].lon]).addTo(macarte);
-                // Nous ajoutons la popup. A noter que son contenu (ici la variable ville) peut être du HTML
-                marker.bindPopup(ville);
-                }
-            }
-			window.onload = function(){
-				// Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
-                initMap(); 
-                // Nous ajoutons un marqueur
-            var marker = L.marker([lat, lon]).addTo(macarte);
-            
-			};
+
 		</script>
 
     </head>
@@ -89,7 +44,7 @@
                     alt="BlinDChriS"></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-caret-down"></i>
+                <i class="fas fa-chevron-down"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
@@ -120,6 +75,7 @@
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Dites m'en plus.</a>
             </div>
         </div>
+        <img class="divider" src="img/divider.png"/>
     </header>
 
 
@@ -174,6 +130,7 @@
     </section>
 
     <!--========================================  P O R T F O L I O  ========================================-->
+    <img class="divider" src="img/divider2.png"/>
     <section class="bg-light" id="portfolio">
         <div class="container">
             <div class="row">
@@ -235,14 +192,16 @@
 
     <!--==========================================  A  P R O P O S   ==========================================-->
     <section id="about">
-        <div class="container">
-            <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2>À PROPOS</h2>
-                         <h3 class="section-subheading text-muted"> Développeur Front-End ... mais aussi un passionné de cultures numériques</h3>
-                    </div>
+        <div class="dividertop"></div>
+            <div class="container">
+                <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2>À PROPOS</h2>
+                            <h3 class="section-subheading text-muted"> Développeur Front-End ... mais aussi un passionné de cultures numériques</h3>
+                        </div>
+                </div>
             </div>
-        </div>
+        <div class="dividerbottom"></div>
     </section>
 
     <!--======================================== M O N  P A R C O U R S ========================================-->
@@ -359,6 +318,7 @@
 
     <!--========================================  C O N T A C T  ========================================-->
     <section id="contact">
+        <div class="dividertop"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -397,8 +357,7 @@
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send
-                                    Message</button>
+                                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Envoyer</button>
                             </div>
                         </div>
                     </form>
@@ -410,6 +369,7 @@
                     </div>
             </div>
         </div>
+        <div class="dividerbottom"></div>
     </section>
 
 

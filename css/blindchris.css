@@ -2,37 +2,62 @@
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* ===================================== */
+  /* =====           NAVBAR          ===== */
+  /* ===================================== */
+  /* ===================================== */
+  /* =====       E N - T Ê T E       ===== */
+  /* ===================================== */
+  /* ===================================== */
+  /* =====         SERVICES          ===== */
+  /* ===================================== */
+  /* Float Shadow */
+  /* ===================================== */
+  /* =====         PORTFOLIO         ===== */
+  /* ===================================== */
+  /* ===================================== */
+  /* =====         A PROPOS          ===== */
+  /* ===================================== */
+  /* ===================================== */
+  /* =====       MON PARCOURS        ===== */
+  /* ===================================== */
+  /* ===================================== */
+  /* =====          Contact          ===== */
+  /* ===================================== */
+  /* ===================================== */
+  /* =====          Footer           ===== */
+  /* ===================================== */
 }
-
-p {
+body .divider {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body p {
   line-height: 1.75;
 }
-
-a {
+body a {
   color: #fed136;
 }
-a:hover {
+body a:hover {
   color: #fec503;
 }
-
-.text-primary {
+body .text-primary {
   color: #fed136 !important;
 }
-
-h1, h2, h3, h4, h5, h6 {
+body h1, body h2, body h3, body h4, body h5, body h6 {
   font-weight: 700;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-section {
+body section {
   padding: 100px 0;
 }
-section h2.section-heading {
+body section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
 }
-section h3.section-subheading {
+body section h3.section-subheading {
   font-size: 16px;
   font-weight: 400;
   font-style: italic;
@@ -40,53 +65,44 @@ section h3.section-subheading {
   text-transform: none;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
 @media (min-width: 768px) {
-  section {
+  body section {
     padding: 150px 0;
   }
 }
-.btn {
+body .btn {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   width: inherit;
 }
-
-.btn-xl {
+body .btn-xl {
   font-size: 18px;
   padding: 20px 40px;
 }
-
-.btn-primary {
+body .btn-primary {
   background-color: rgba(255, 196, 0, 0.8);
   border-color: rgba(255, 196, 0, 0.8);
 }
-.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+body .btn-primary:active, body .btn-primary:focus, body .btn-primary:hover {
   background-color: #fed136;
   border-color: #fed136;
   color: white;
 }
-.btn-primary:active, .btn-primary:focus {
+body .btn-primary:active, body .btn-primary:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5);
 }
-
-::-moz-selection, ::selection {
+body ::-moz-selection, body ::selection {
   background: #fed136;
   text-shadow: none;
 }
-
-img::-moz-selection, img::selection, img::-moz-selection {
+body img::-moz-selection, body img::selection, body img::-moz-selection {
   background: transparent;
 }
-
-/* ===================================== */
-/* =====           NAVBAR          ===== */
-/* ===================================== */
-#mainNav {
+body #mainNav {
   background-color: #27001c;
 }
-#mainNav .navbar-toggler {
+body #mainNav .navbar-toggler {
   font-size: 12px;
   right: 0;
   padding: 13px;
@@ -96,14 +112,14 @@ img::-moz-selection, img::selection, img::-moz-selection {
   background-color: #fed136;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-#mainNav .navbar-brand {
+body #mainNav .navbar-brand {
   color: #fed136;
   font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+body #mainNav .navbar-brand.active, body #mainNav .navbar-brand:active, body #mainNav .navbar-brand:focus, body #mainNav .navbar-brand:hover {
   color: #fec503;
 }
-#mainNav .navbar-nav .nav-item .nav-link {
+body #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 90%;
   font-weight: 400;
   padding: 0.75em 0;
@@ -111,12 +127,11 @@ img::-moz-selection, img::selection, img::-moz-selection {
   color: white;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+body #mainNav .navbar-nav .nav-item .nav-link.active, body #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fed136;
 }
-
 @media (min-width: 992px) {
-  #mainNav {
+  body #mainNav {
     padding-top: 25px;
     padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -124,36 +139,32 @@ img::-moz-selection, img::selection, img::-moz-selection {
     border: none;
     background-color: transparent;
   }
-  #mainNav .navbar-brand {
+  body #mainNav .navbar-brand {
     font-size: 1.75em;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
-  #mainNav .navbar-nav .nav-item .nav-link {
+  body #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em;
   }
-  #mainNav.navbar-shrink {
+  body #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
     background-color: #27001c;
   }
-  #mainNav.navbar-shrink #navbar-logo {
+  body #mainNav.navbar-shrink #navbar-logo {
     display: block;
     height: 38px;
   }
-  #mainNav.navbar-shrink .navbar-brand {
+  body #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
     padding: 12px 0;
   }
 }
-#navbar-logo {
+body #navbar-logo {
   height: 50px;
 }
-
-/* ===================================== */
-/* =====       E N - T Ê T E       ===== */
-/* ===================================== */
-header.masthead {
+body header.masthead {
   text-align: center;
   color: white;
   background-image: url("../img/header-bg.jpg");
@@ -162,38 +173,37 @@ header.masthead {
   background-position: center center;
   background-size: cover;
 }
-header.masthead .intro-text {
+body header.masthead .intro-text {
   padding-top: 150px;
   padding-bottom: 100px;
 }
-header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
+body header.masthead .intro-text .intro-lead-in {
+  font-size: 14px;
   font-style: italic;
   line-height: 22px;
   margin-bottom: 25px;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-header.masthead .intro-text .intro-heading {
+body header.masthead .intro-text .intro-heading {
   font-size: 50px;
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 25px;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
 @media (min-width: 768px) {
-  header.masthead .intro-text {
-    padding-top: 300px;
+  body header.masthead .intro-text {
+    padding-top: 250px;
     padding-bottom: 200px;
   }
-  header.masthead .intro-text .intro-lead-in {
+  body header.masthead .intro-text .intro-lead-in {
     font-size: 18px;
     font-style: italic;
     line-height: 20px;
     margin-top: 25px;
     font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
-  header.masthead .intro-text .intro-heading {
+  body header.masthead .intro-text .intro-heading {
     font-size: 75px;
     font-weight: 700;
     line-height: 75px;
@@ -201,29 +211,25 @@ header.masthead .intro-text .intro-heading {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 }
-.logointro {
+body .logointro {
   width: 370px;
 }
-
 @media (min-width: 768px) {
-  .logointro {
+  body .logointro {
     width: 550px;
   }
 }
 @media (min-width: 992px) {
-  .logointro {
+  body .logointro {
     width: 650px;
   }
 }
 @media (min-width: 1200px) {
-  .logointro {
+  body .logointro {
     width: 800px;
   }
 }
-/* ===================================== */
-/* =====         SERVICES          ===== */
-/* ===================================== */
-.service {
+body .service {
   padding-top: 20px;
   padding-bottom: 20px;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -236,15 +242,13 @@ header.masthead .intro-text .intro-heading {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.service:hover {
+body .service:hover {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
 }
-
-/* Float Shadow */
-.hvr-float-shadow {
+body .hvr-float-shadow {
   padding-top: 20px;
   padding-bottom: 20px;
   display: inline-block;
@@ -258,8 +262,7 @@ header.masthead .intro-text .intro-heading {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-
-.hvr-float-shadow:before {
+body .hvr-float-shadow:before {
   pointer-events: none;
   position: absolute;
   z-index: -1;
@@ -277,55 +280,46 @@ header.masthead .intro-text .intro-heading {
   -webkit-transition-property: transform, opacity;
   transition-property: transform, opacity;
 }
-
-.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+body .hvr-float-shadow:hover, body .hvr-float-shadow:focus, body .hvr-float-shadow:active {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
   /* move the element up by 5px */
 }
-
-.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+body .hvr-float-shadow:hover:before, body .hvr-float-shadow:focus:before, body .hvr-float-shadow:active:before {
   opacity: 1;
   -webkit-transform: translateY(5px);
   transform: translateY(5px);
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
-
-.service-heading {
+body .service-heading {
   margin: 15px 0;
   text-transform: none;
 }
-
-.spin {
+body .spin {
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
 }
-.spin:hover {
+body .spin:hover {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
   color: white;
 }
-
-.hover:hover {
+body .hover:hover {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
 }
-
-/* ===================================== */
-/* =====         PORTFOLIO         ===== */
-/* ===================================== */
-#portfolio .portfolio-item {
+body #portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px;
 }
-#portfolio .portfolio-item .portfolio-link {
+body #portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
   max-width: 400px;
   margin: 0 auto;
   cursor: pointer;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+body #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -334,10 +328,10 @@ header.masthead .intro-text .intro-heading {
   opacity: 0;
   background: rgba(254, 209, 54, 0.9);
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+body #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+body #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -347,73 +341,72 @@ header.masthead .intro-text .intro-heading {
   text-align: center;
   color: white;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+body #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
   margin-top: -12px;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3, #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+body #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3, body #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
   margin: 0;
 }
-#portfolio .portfolio-item .portfolio-caption {
+body #portfolio .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
   padding: 25px;
   text-align: center;
   background-color: #fff;
 }
-#portfolio .portfolio-item .portfolio-caption h4 {
+body #portfolio .portfolio-item .portfolio-caption h4 {
   margin: 0;
   text-transform: none;
 }
-#portfolio .portfolio-item .portfolio-caption p {
+body #portfolio .portfolio-item .portfolio-caption p {
   font-size: 16px;
   font-style: italic;
   margin: 0;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-#portfolio * {
+body #portfolio * {
   z-index: 2;
 }
-
 @media (min-width: 767px) {
-  #portfolio .portfolio-item {
+  body #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
 }
-.portfolio-modal {
+body .portfolio-modal {
   padding-right: 0px !important;
 }
-.portfolio-modal .modal-dialog {
+body .portfolio-modal .modal-dialog {
   margin: 1rem;
   max-width: 100vw;
 }
-.portfolio-modal .modal-content {
+body .portfolio-modal .modal-content {
   padding: 100px 0;
   text-align: center;
 }
-.portfolio-modal .modal-content h2 {
+body .portfolio-modal .modal-content h2 {
   font-size: 3em;
   margin-bottom: 15px;
 }
-.portfolio-modal .modal-content p {
+body .portfolio-modal .modal-content p {
   margin-bottom: 30px;
 }
-.portfolio-modal .modal-content p.item-intro {
+body .portfolio-modal .modal-content p.item-intro {
   font-size: 16px;
   font-style: italic;
   margin: 20px 0 30px;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.portfolio-modal .modal-content ul.list-inline {
+body .portfolio-modal .modal-content ul.list-inline {
   margin-top: 0;
   margin-bottom: 30px;
 }
-.portfolio-modal .modal-content img {
+body .portfolio-modal .modal-content img {
   margin-bottom: 30px;
 }
-.portfolio-modal .modal-content button {
+body .portfolio-modal .modal-content button {
   cursor: pointer;
 }
-.portfolio-modal .close-modal {
+body .portfolio-modal .close-modal {
   position: absolute;
   top: 25px;
   right: 25px;
@@ -422,10 +415,10 @@ header.masthead .intro-text .intro-heading {
   cursor: pointer;
   background-color: transparent;
 }
-.portfolio-modal .close-modal:hover {
+body .portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
-.portfolio-modal .close-modal .lr {
+body .portfolio-modal .close-modal .lr {
   /* Safari and Chrome */
   z-index: 1051;
   width: 1px;
@@ -436,7 +429,7 @@ header.masthead .intro-text .intro-heading {
   transform: rotate(45deg);
   background-color: #27001c;
 }
-.portfolio-modal .close-modal .lr .rl {
+body .portfolio-modal .close-modal .lr .rl {
   /* Safari and Chrome */
   z-index: 1052;
   width: 1px;
@@ -446,26 +439,53 @@ header.masthead .intro-text .intro-heading {
   transform: rotate(90deg);
   background-color: #27001c;
 }
-
-.buttonlnk {
+body .buttonlnk {
   color: #fff;
 }
-.buttonlnk:hover {
+body .buttonlnk:hover {
   color: #fff;
 }
-
-/* ===================================== */
-/* =====       QUI SUIS-JE         ===== */
-/* ===================================== */
-/* ===================================== */
-/* =====       MON PARCOURS        ===== */
-/* ===================================== */
-.parcours {
+body #about {
+  background-image: url("../img/about-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+body #about .dividertop {
+  height: 50px;
+  background-image: url("../img/divider2top.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  margin-top: -150px;
+  margin-bottom: 150px;
+}
+body #about .dividerbottom {
+  height: 50px;
+  background-image: url("../img/divider.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  margin-top: 150px;
+  margin-bottom: -150px;
+}
+@media (max-width: 768px) {
+  body #about .dividertop {
+    margin-top: -100px;
+    margin-bottom: 100px;
+  }
+  body #about .dividerbottom {
+    margin-top: 100px;
+    margin-bottom: -100px;
+  }
+}
+body .parcours {
   position: relative;
   padding: 0;
   list-style: none;
 }
-.parcours:before {
+body .parcours:before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -475,38 +495,38 @@ header.masthead .intro-text .intro-heading {
   content: "";
   background-color: #e9ecef;
 }
-.parcours > li {
+body .parcours > li {
   position: relative;
   min-height: 50px;
   margin-bottom: 50px;
 }
-.parcours > li:after, .parcours > li:before {
+body .parcours > li:after, body .parcours > li:before {
   display: table;
   content: " ";
 }
-.parcours > li:after {
+body .parcours > li:after {
   clear: both;
 }
-.parcours > li .parcours-panel {
+body .parcours > li .parcours-panel {
   position: relative;
   float: right;
   width: 100%;
   padding: 0 20px 0 100px;
   text-align: left;
 }
-.parcours > li .parcours-panel:before {
+body .parcours > li .parcours-panel:before {
   right: auto;
   left: -15px;
   border-right-width: 15px;
   border-left-width: 0;
 }
-.parcours > li .parcours-panel:after {
+body .parcours > li .parcours-panel:after {
   right: auto;
   left: -14px;
   border-right-width: 14px;
   border-left-width: 0;
 }
-.parcours > li .parcours-image {
+body .parcours > li .parcours-image {
   position: absolute;
   z-index: 100;
   left: 0;
@@ -519,185 +539,205 @@ header.masthead .intro-text .intro-heading {
   border-radius: 100%;
   background-color: #fed136;
 }
-.parcours > li .parcours-image h4 {
+body .parcours > li .parcours-image h4 {
   font-size: 10px;
   line-height: 14px;
   margin-top: 12px;
 }
-.parcours > li.parcours-inverted > .parcours-panel {
+body .parcours > li.parcours-inverted > .parcours-panel {
   float: right;
   padding: 0 20px 0 100px;
   text-align: left;
 }
-.parcours > li.parcours-inverted > .parcours-panel:before {
+body .parcours > li.parcours-inverted > .parcours-panel:before {
   right: auto;
   left: -15px;
   border-right-width: 15px;
   border-left-width: 0;
 }
-.parcours > li.parcours-inverted > .parcours-panel:after {
+body .parcours > li.parcours-inverted > .parcours-panel:after {
   right: auto;
   left: -14px;
   border-right-width: 14px;
   border-left-width: 0;
 }
-.parcours > li:last-child {
+body .parcours > li:last-child {
   margin-bottom: 0;
 }
-.parcours .parcours-heading h4 {
+body .parcours .parcours-heading h4 {
   margin-top: 0;
   color: inherit;
 }
-.parcours .parcours-heading h4.subheading {
+body .parcours .parcours-heading h4.subheading {
   text-transform: none;
 }
-.parcours .parcours-body > ul, .parcours .parcours-body > p {
+body .parcours .parcours-body > ul, body .parcours .parcours-body > p {
   margin-bottom: 0;
 }
-
 @media (min-width: 768px) {
-  .parcours:before {
+  body .parcours:before {
     left: 50%;
   }
-  .parcours > li {
+  body .parcours > li {
     min-height: 100px;
     margin-bottom: 100px;
   }
-  .parcours > li .parcours-panel {
+  body .parcours > li .parcours-panel {
     float: left;
     width: 41%;
     padding: 0 20px 20px 30px;
     text-align: right;
   }
-  .parcours > li .parcours-image {
+  body .parcours > li .parcours-image {
     left: 50%;
     width: 100px;
     height: 100px;
     margin-left: -50px;
   }
-  .parcours > li .parcours-image h4 {
+  body .parcours > li .parcours-image h4 {
     font-size: 13px;
     line-height: 18px;
     margin-top: 16px;
   }
-  .parcours > li.parcours-inverted > .parcours-panel {
+  body .parcours > li.parcours-inverted > .parcours-panel {
     float: right;
     padding: 0 30px 20px 20px;
     text-align: left;
   }
 }
 @media (min-width: 992px) {
-  .parcours > li {
+  body .parcours > li {
     min-height: 150px;
   }
-  .parcours > li .parcours-panel {
+  body .parcours > li .parcours-panel {
     padding: 0 20px 20px;
   }
-  .parcours > li .parcours-image {
+  body .parcours > li .parcours-image {
     width: 150px;
     height: 150px;
     margin-left: -75px;
   }
-  .parcours > li .parcours-image h4 {
+  body .parcours > li .parcours-image h4 {
     font-size: 18px;
     line-height: 26px;
     margin-top: 30px;
   }
-  .parcours > li.parcours-inverted > .parcours-panel {
+  body .parcours > li.parcours-inverted > .parcours-panel {
     padding: 0 20px 20px;
   }
 }
 @media (min-width: 1200px) {
-  .parcours > li {
+  body .parcours > li {
     min-height: 170px;
   }
-  .parcours > li .parcours-panel {
+  body .parcours > li .parcours-panel {
     padding: 0 20px 20px 100px;
   }
-  .parcours > li .parcours-image {
+  body .parcours > li .parcours-image {
     width: 170px;
     height: 170px;
     margin-left: -85px;
   }
-  .parcours > li .parcours-image h4 {
+  body .parcours > li .parcours-image h4 {
     margin-top: 40px;
   }
-  .parcours > li.parcours-inverted > .parcours-panel {
+  body .parcours > li.parcours-inverted > .parcours-panel {
     padding: 0 100px 20px 20px;
   }
 }
-#map {
+body #map {
   height: 614px;
   padding: 0px;
+  border-radius: 0.3rem;
 }
-
 @media (max-width: 992px) {
-  #map {
+  body #map {
     height: 300px;
-    margin-top: 20px;
+    margin-top: 25px;
+    border-radius: 0.3rem;
   }
 }
-/* ===================================== */
-/* =====          Contact          ===== */
-/* ===================================== */
-section#contact {
+body section#contact {
   background-color: #27001c;
   background-image: url("../img/contact-image.png");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
-section#contact .section-heading {
+body section#contact .dividertop {
+  height: 50px;
+  background-image: url("../img/dividertop.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  margin-top: -150px;
+  margin-bottom: 150px;
+}
+body section#contact .dividerbottom {
+  height: 50px;
+  background-image: url("../img/divider.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  margin-top: 150px;
+  margin-bottom: -150px;
+}
+@media (max-width: 768px) {
+  body section#contact .dividertop {
+    margin-top: -100px;
+    margin-bottom: 100px;
+  }
+  body section#contact .dividerbottom {
+    margin-top: 100px;
+    margin-bottom: -100px;
+  }
+}
+body section#contact .section-heading {
   color: white;
 }
-section#contact .form-group {
+body section#contact .form-group {
   margin-bottom: 25px;
 }
-section#contact .form-group input, section#contact .form-group textarea {
+body section#contact .form-group input, body section#contact .form-group textarea {
   padding: 20px;
 }
-section#contact .form-group input.form-control {
+body section#contact .form-group input.form-control {
   height: auto;
 }
-section#contact .form-group textarea.form-control {
+body section#contact .form-group textarea.form-control {
   height: 248px;
 }
-section#contact .form-control:focus {
+body section#contact .form-control:focus {
   border-color: #fed136;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-section#contact ::-webkit-input-placeholder, section#contact :-moz-placeholder, section#contact ::-moz-placeholder, section#contact :-ms-input-placeholder {
+body section#contact ::-webkit-input-placeholder, body section#contact :-moz-placeholder, body section#contact ::-moz-placeholder, body section#contact :-ms-input-placeholder {
   font-weight: 700;
   color: #ced4da;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-/* ===================================== */
-/* =====          Footer           ===== */
-/* ===================================== */
-footer {
-  padding: 25px 0;
+body footer {
+  padding: 0 0 25px 0;
   text-align: center;
 }
-footer span.copyright {
+body footer span.copyright {
   font-size: 90%;
   line-height: 40px;
   text-transform: none;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-footer ul.quicklinks {
+body footer ul.quicklinks {
   font-size: 90%;
   line-height: 40px;
   margin-bottom: 0;
   text-transform: none;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-ul.social-buttons {
+body ul.social-buttons {
   margin-bottom: 0;
 }
-ul.social-buttons li a {
+body ul.social-buttons li a {
   font-size: 20px;
   line-height: 50px;
   display: block;
@@ -710,7 +750,7 @@ ul.social-buttons li a {
   outline: none;
   background-color: #27001c;
 }
-ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+body ul.social-buttons li a:active, body ul.social-buttons li a:focus, body ul.social-buttons li a:hover {
   background-color: #fed136;
 }
 
