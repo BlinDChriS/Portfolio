@@ -56,6 +56,7 @@ section {
 .btn {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
+  width: inherit;
 }
 
 .btn-xl {
@@ -665,7 +666,14 @@ header.masthead {
 }
 
 #map{
+    height: 614px;
     padding: 0px;
+}
+@media (max-width: 992px) {
+  #map {
+    height: 300px;
+    margin-top: 20px;
+  }
 }
 
 /* ===================================== */

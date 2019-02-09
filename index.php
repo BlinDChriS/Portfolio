@@ -43,20 +43,20 @@
         <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
 		<script type="text/javascript">
 			// On initialise la latitude et la longitude de Paris (centre de la carte)
-			var lat = 47.2543202;
-			var lon = 6.0342307;
+			var lat = 47.23464;
+			var lon = 6.02069;
             var macarte = null;
             // Nous initialisons une liste de marqueurs
             var villes = {
-                "Besançon": { "lat": 47.2543202, "lon": 6.0342307 },
+                "Besançon": { "lat": 47.23464, "lon": 6.02069 },
                 "Antony": { "lat": 48.7358961, "lon": 2.3038353 }
             };
 			// Fonction d'initialisation de la carte
 			function initMap() {
 				// Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
-                macarte = L.map('map').setView([lat, lon], 18);
+                macarte = L.map('map').setView([lat, lon], 17);
                 // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
-                L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+                L.tileLayer('//{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
                     // Il est toujours bien de laisser le lien vers la source des données
                     attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
                     minZoom: 1,
@@ -77,11 +77,6 @@
             
 			};
 		</script>
-		<style type="text/css">
-			#map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
-				height:400px;
-			}
-		</style>
 
     </head>
 
@@ -372,10 +367,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-4 col-12">
                     <form id="contactForm" name="sentMessage" novalidate="novalidate">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <input class="form-control" id="name" type="text" placeholder="Nom *" required="required"
                                         data-validation-required-message="Renseignez votre nom et prénom, je vous prie.">
@@ -392,7 +387,7 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <textarea class="form-control" id="message" placeholder="Message *" required="required"
                                         data-validation-required-message="Veuillez taper un message"></textarea>
@@ -408,15 +403,16 @@
                         </div>
                     </form>
                 </div>
+                    <div class="col-lg-8 col-12">
+                        <div id="map">
+                    <!-- Ici s'affichera la carte -->
+                        </div>
+                    </div>
             </div>
         </div>
     </section>
 
-    <div class="container-fluid">
-                    <div id="map" class="row">
-                    <!-- Ici s'affichera la carte -->
-                    </div>
-    </div>
+
     <!--========================================  F O O T E R  ========================================-->
     <footer>
         <div class="container">
