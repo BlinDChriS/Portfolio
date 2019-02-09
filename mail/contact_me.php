@@ -16,7 +16,7 @@ $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
    
 // Create the email and send the message
-$to = 'blindchris@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$to = 'blindchris@laposte.net'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Formulaire BlinDChriS - Portfolio:  $name";
 $email_body = "Vous avez reçu un nouveau message depuis le formulaire du portfolio BlinDChriS.\n\n"."Voici les détails:\n\nNom: $name\n\nEmail: $email_address\n\nTéléphone: $phone\n\nMessage:\n$message";
 $headers = "De: noreply@blindchris.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
