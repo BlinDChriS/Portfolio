@@ -94,8 +94,7 @@
                     alt="BlinDChriS"></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-caret-down"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
@@ -104,9 +103,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#whoami">Qui suis-je?</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#about">À propos</a>
@@ -142,40 +138,40 @@
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-lg-3 service">
+                <div class="col-lg-3">
                     <span class="fa-stack fa-4x">
                         <i class="fas fa-circle fa-stack-2x text-primary"></i>
                         <i class="spin fas fa-flask fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Vos besoins</h4>
-                    <p class="text-muted">C'est une affaire d'alchimie et c'est en échangeant des idées que nous
+                    <p class="hvr-float-shadow text-muted">C'est une affaire d'alchimie et c'est en échangeant des idées que nous
                         arriverons à la formule qui marche. Je vous écoute et je crée le plan qu'il vous faut.</p>
                 </div>
-                <div class="col-lg-3 service">
+                <div class="col-lg-3">
                     <span class="fa-stack fa-4x">
                         <i class="fas fa-circle fa-stack-2x text-primary"></i>
                         <i class="spin fas fa-tablet-alt fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Votre site Web sera sexy quelque soit l'écran, sur mobile, tablette,
+                    <p class="hvr-float-shadow text-muted">Votre site Web sera sexy quelque soit l'écran, sur mobile, tablette,
                         ordinateurs, téléviseurs... ça fera peut-être même le café.</p>
                 </div>
-                <div class="col-lg-3 service">
+                <div class="col-lg-3">
                     <span class="fa-stack fa-4x">
                         <i class="fas fa-circle fa-stack-2x text-primary"></i>
                         <i class="spin fas fa-code fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Codé avec soin</h4>
-                    <p class="text-muted">Un site web optimisé et bien référencé, un véritable travail de fourmi pour
+                    <p class="hvr-float-shadow text-muted">Un site web optimisé et bien référencé, un véritable travail de fourmi pour
                         un résultat propre et efficace</p>
                 </div>
-                <div class="col-lg-3 service">
+                <div class="col-lg-3">
                     <span class="fa-stack fa-4x">
                         <i class="fas fa-circle fa-stack-2x text-primary"></i>
                         <i class="spin fas fa-heart fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Fait avec amour</h4>
-                    <p class="text-muted">Il faut faire les choses avec amour de nos jours. Le site Web sera livré
+                    <p class="hvr-float-shadow text-muted">Il faut faire les choses avec amour de nos jours. Le site Web sera livré
                         fonctionnel et à jour.</p>
                 </div>
             </div>
@@ -242,20 +238,20 @@
 
 
 
-    <!--========================================  Q U I   S U I S   J E ?  ========================================-->
-    <section id="whoami">
+    <!--==========================================  A  P R O P O S   ==========================================-->
+    <section id="about">
         <div class="container">
             <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2>Un développeur Front-end</h2>
-                         <h3 class="section-subheading text-muted">... mais aussi un passionné de cultures numériques</h3>
+                        <h2>À PROPOS</h2>
+                         <h3 class="section-subheading text-muted"> Développeur Front-End ... mais aussi un passionné de cultures numériques</h3>
                     </div>
             </div>
         </div>
     </section>
 
     <!--======================================== M O N  P A R C O U R S ========================================-->
-    <section id="about">
+    <section id="parcours">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -584,7 +580,7 @@
     <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
 
     <!--========================================  Custom scripts  ========================================-->
-    <script src="js/blindchris.min.js"></script>
+    <script src="js/blindchris.js"></script>
 
 </body>
 
