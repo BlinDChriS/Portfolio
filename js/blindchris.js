@@ -53,8 +53,8 @@
 
 // SCRIPT OPEN STREET MAP
 			// Latitude et longitude de base
-			var lat = 47.23464;
-			var lon = 6.02069;
+			var lat = 47.2543202;
+			var lon = 6.0342307;
             var macarte = null;
             // Si on veut initialiser une liste de marqueurs
             var villes = {
@@ -73,7 +73,7 @@
 				// Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
                 macarte = L.map('map').setView([lat, lon], 17);
                 // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer.
-                L.tileLayer('//{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+                L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
                     // attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
                     minZoom: 1,
                     maxZoom: 20
@@ -89,6 +89,6 @@
 				// Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
                 initMap(); 
                 // Nous ajoutons un marqueur
-            var marker = L.marker([lat, lon], {icon: blindIcon}).addTo(macarte).bindPopup("<b>BlinDChriS</b>, développeur Web");
+            var marker = L.marker([lat, lon], {icon: blindIcon}).addTo(macarte).bindPopup("<b>BlinDChriS</b>, développeur Web<br><a href='http://www.google.fr/maps/place/14+Rue+Résal,+25000+Besançon' target='_blank'>14 rue Résal, Apt. 103<br>25000 Besançon</a>");
             
 			};
