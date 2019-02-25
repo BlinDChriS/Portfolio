@@ -4,16 +4,16 @@ $primarycolordarker: rgba(255, 196, 0, 0.8);
 $background: #27001c;
 $background2: #e9ecef;
 $lightgrey: #ced4da;
+$divider: url("../img/divider.svg");
+$divider2: url("../img/divider2.svg");
+$dividertop: url("../img/dividertop.svg");
+$divider2top: url("../img/divider2top.svg");
+
+
 
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-
-  .divider {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   p {
     line-height: 1.75;
@@ -51,6 +51,13 @@ body {
       font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     }
   }
+  
+  img.divtop {position: absolute;margin-top: -152px;}
+  img.divbottom {position: absolute;margin-top: -158px;}
+
+  @media (max-width: 768px) {
+  img.divtop {width:auto;height: auto;position: absolute;margin-top: -102px;}
+  img.divbottom {width:auto;height: auto;position: absolute;margin-top: -103px;}}
 
   @media (min-width: 768px) {
     section {
@@ -148,28 +155,40 @@ body {
       }
       &.navbar-shrink {
           #navbar-logo {
-              display: block;
               height: 38px;
+              opacity: 1;
+              -webkit-transition: opacity 600ms, visibility 600ms;
+              transition: opacity 600ms, visibility 600ms;
           }
         padding-top: 0;
         padding-bottom: 0;
         background-color: $background;
         .navbar-brand {
-          font-size: 1.25em;
+          font-size: 20px;
           padding: 12px 0;
         }
       }
     }
   }
-
   #navbar-logo {
-  //   display: none;
-    height: 50px;
+    height: 38px;
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    transition: opacity 600ms, visibility 600ms;
+    opacity: 1;
   }
+  @media (min-width: 992px) {
+    #navbar-logo {
+      -webkit-transition: opacity 600ms, visibility 600ms;
+      transition: opacity 600ms, visibility 600ms;
+      height: 38px;
+      opacity: 0;
+    }
+}
 
   /* ===================================== */
   /* =====       E N - T Ê T E       ===== */
   /* ===================================== */
+
 
   header.masthead {
     text-align: center;
@@ -180,8 +199,8 @@ body {
     background-position: center center;
     background-size: cover;
     .intro-text {
-      padding-top: 150px;
-      padding-bottom: 100px;
+      padding-top: 250px;
+      padding-bottom: 200px;
       .intro-lead-in {
         font-size: 14px;
         font-style: italic;
@@ -190,15 +209,21 @@ body {
         font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
       }
       .intro-heading {
+        text-align: center !important;
         font-size: 50px;
         font-weight: 700;
         line-height: 50px;
         margin-bottom: 25px;
         font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-        
       }
     }
-  }
+    &::after {
+        display: block;
+        content: $divider;
+        height: 16px;
+        vertical-align: bottom;
+      }
+  }  
 
   @media (min-width: 768px) {
     header.masthead .intro-text {
@@ -287,7 +312,7 @@ body {
       -webkit-transition-property: transform;
       transition-property: transform;
     }
-    .hvr-float-shadow:before {
+    .hvr-float-shadow::before {
       pointer-events: none;
       position: absolute;
       z-index: -1;
@@ -421,7 +446,7 @@ body {
       padding: 100px 0;
       text-align: center;
       h2 {
-        font-size: 3em;
+        font-size: 48px;
         margin-bottom: 15px;
       }
       p {
@@ -491,36 +516,8 @@ body {
   /* =====         A PROPOS          ===== */
   /* ===================================== */
 
-  #about { 
-    .dividertop {
-      height: 50px;
-      background-image: url("../img/divider2top.png");
-      background-repeat: no-repeat;
-      background-position: top center;
-      background-size: cover;
-      margin-top: -150px;
-      margin-bottom: 150px;
-  }
-    .dividerbottom {
-      height: 50px;
-      background-image: url("../img/divider.png");
-      background-repeat: no-repeat;
-      background-position: bottom center;
-      background-size: cover;
-      margin-top: 150px;
-      margin-bottom: -150px;
-  }
-    @media (max-width: 768px){
-      .dividertop {
-      margin-top: -100px;
-      margin-bottom: 100px;
-      }
-      .dividerbottom {
-        margin-top: 100px;
-        margin-bottom: -100px;
-      }
-    }
-
+  #about {
+    h2,h3 {color: #fff}
     background-image: url("../img/about-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -533,6 +530,7 @@ body {
   /* =====       MON PARCOURS        ===== */
   /* ===================================== */
 
+  
   .parcours {
     position: relative;
     padding: 0;
@@ -724,34 +722,9 @@ body {
   /* ===================================== */
 
   section#contact {
-    .dividertop {
-      height: 50px;
-      background-image: url("../img/dividertop.png");
-      background-repeat: no-repeat;
-      background-position: top center;
-      background-size: cover;
-      margin-top: -150px;
-      margin-bottom: 150px;
-  }
-    .dividerbottom {
-      height: 50px;
-      background-image: url("../img/divider.png");
-      background-repeat: no-repeat;
-      background-position: bottom center;
-      background-size: cover;
-      margin-top: 150px;
-      margin-bottom: -150px;
-  }
-  @media (max-width: 768px){
-    .dividertop {
-    margin-top: -100px;
-    margin-bottom: 100px;
+    h3.section-subheading.text-muted {
+      color: #ccc !important;
     }
-    .dividerbottom {
-      margin-top: 100px;
-      margin-bottom: -100px;
-    }
-  }
   
     background-color: $background;
     background-image: url("../img/contact-image.png");
@@ -790,7 +763,8 @@ body {
   /* ===================================== */
 
   footer {
-    padding: 0 0 25px 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
     text-align: center;
     span.copyright {
       font-size: 90%;
