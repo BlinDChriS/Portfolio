@@ -1,0 +1,12 @@
+{
+    "name": "blind/blindchrisportfolio",
+    "authors": [
+        {
+            "name": "BlinDChriS",
+            "email": "blindchris@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "2.0"
+    }
+}
