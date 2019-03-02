@@ -24,6 +24,9 @@ body {
   /* =====          Contact          ===== */
   /* ===================================== */
   /* ===================================== */
+  /* =====       Ajout Projet        ===== */
+  /* ===================================== */
+  /* ===================================== */
   /* =====          Footer           ===== */
   /* ===================================== */
 }
@@ -226,7 +229,6 @@ body header.masthead::after {
   display: block;
   content: url("../img/divider.svg");
   height: 16px;
-  vertical-align: bottom;
 }
 @media (min-width: 768px) {
   body header.masthead .intro-text {
@@ -664,6 +666,48 @@ body section#contact .form-control:focus {
   box-shadow: none;
 }
 body section#contact ::-webkit-input-placeholder, body section#contact :-moz-placeholder, body section#contact ::-moz-placeholder, body section#contact :-ms-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+body section#ajoutprojet {
+  background-color: #000815;
+  background-image: url("../img/contact-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+body section#ajoutprojet h3.section-subheading.text-muted {
+  color: #ccc !important;
+}
+body section#ajoutprojet p#mssgResult {
+  color: #ccc !important;
+  font-weight: bold;
+}
+body section#ajoutprojet label {
+  color: #ccc !important;
+}
+body section#ajoutprojet .section-heading {
+  color: white;
+}
+body section#ajoutprojet .form-group {
+  margin-bottom: 25px;
+}
+body section#ajoutprojet .form-group input, body section#ajoutprojet .form-group textarea {
+  padding: 20px;
+}
+body section#ajoutprojet .form-group input.form-control {
+  height: auto;
+}
+body section#ajoutprojet .form-group textarea.form-control {
+  height: 248px;
+}
+body section#ajoutprojet .form-control:focus {
+  border-color: #fed136;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+body section#ajoutprojet ::-webkit-input-placeholder, body section#ajoutprojet :-moz-placeholder, body section#ajoutprojet ::-moz-placeholder, body section#ajoutprojet :-ms-input-placeholder {
   font-weight: 700;
   color: #ced4da;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

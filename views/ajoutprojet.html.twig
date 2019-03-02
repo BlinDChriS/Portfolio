@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>BlinDChriS, Développeur, intégrateur Web & graphiste</title>
+    <meta name="description" content="BlinDChriS, un développeur Web créatif et à votre écoute">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta name="author" content="BlinDChriS">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+
+    <!--======================================== POLICES ========================================-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    
+    <!--======================================== MAP LEAFLET ========================================-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"/>
+
+    <!--======================================== MON CSS ========================================-->
+    <link rel="stylesheet" href="public/css/blindchris.css">
+</head>
+
+<body id="ajoutprojet">
+    <section id="ajoutprojet">
+        <div class="col-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="section-heading text-uppercase">Ajouter un projet</h2>
+                        <h3 class="section-subheading text-muted">J'utilise ce formulaire. Si tu n'es pas moi, pas touche ! (OK j'avoue, paye ta sécurité)</h3>
+                    </div>
+                    <div class="offset-lg-2"></div>
+                    <div class="col-12 col-lg-8">
+                        <form id="formmssg" action="controllers/form.php" method="post" >
+                        <div class="form-row">
+                            <div class="col-lg-6 form-group">
+                                <label for="projettitre">Titre du projet</label>
+                                <input type="text" class="form-control" name="projettitre" placeholder="Ajouter le nom du projet" required="required">
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <label for="projetclient">Client du projet</label>
+                                <input type="text" class="form-control" name="projetclient" placeholder="Ajouter le nom du client" required="required">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-6 form-group">
+                                <label for="projetcategorie">Catégorie du projet</label>
+                                <input type="text" class="form-control" name="projetcategorie" placeholder="Ajouter la catégorie" required="required">
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <label for="projetdate">Date du projet</label>
+                                <input type="date" class="form-control" name="projetdate" placeholder="Choisir la date" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="projeturl">URL du site du projet</label>
+                            <input type="text" class="form-control" name="projeturl" placeholder="http://" value="http://">
+                        </div>
+                        <div class="form-group">
+                            <label for="projetminiature">URL de la miniature</label>
+                            <input type="text" class="form-control" name="projetminiature" placeholder="http://" value="http://">
+                        </div>
+                        <div class="form-group">
+                            <label for="projetimage">URL de l'image en détail</label>
+                            <input type="text" class="form-control" name="projetimage" placeholder="http://" value="http://">
+                        </div>
+                        <div class="form-group">
+                            <label for="projetalt">Texte de remplacement des images</label>
+                            <input type="text" class="form-control" name="projetalt" placeholder="Texte alternatif" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label for="projetdescription">Description courte du projet</label>
+                            <textarea class="form-control" name="projetdescription" placeholder="Ajouter la description" required="required"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="projetdetails">Description détaillée du projet</label>
+                            <textarea class="form-control" name="projetdetails" placeholder="Ajouter la description" required="required"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Envoyer le projet</button>
+                                </form> &nbsp&nbsp<p id='mssgResult'></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offset-lg-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="public/js/jquery.min.js"></script>
+<script src="public/js/popper.min.js"></script>
+<script src="public/js/bootstrap.min.js"></script>
+<script src="public/js/projet.js"></script>
+
+</body>
+
+</html>
