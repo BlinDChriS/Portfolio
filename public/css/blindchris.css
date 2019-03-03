@@ -39,6 +39,10 @@ body a {
 body a:hover {
   color: #fec503;
 }
+body .modal-backdrop {
+  /* bug fix - no overlay */
+  display: none;
+}
 body .text-primary {
   color: #fed136 !important;
 }
@@ -448,8 +452,26 @@ body #about {
   background-position: center center;
   background-size: cover;
 }
-body #about h2, body #about h3 {
+body #about h2, body #about h3, body #about p {
   color: #fff;
+}
+body #about .twoColumns {
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+}
+@media (min-width: 768px) {
+  body #about .twoColumns {
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
 }
 body .parcours {
   position: relative;

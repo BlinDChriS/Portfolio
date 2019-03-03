@@ -15,24 +15,15 @@ switch($id){
 
     case "home":
     include "models/BDD.php";
-    include "models/twig.php";
 
-
-// REQUETE SQL POUR CHOPPER TOUS TES PROJETS EN BDD
-// ... Pas encore ...
-
-    echo $twig->render('accueil.html.twig');
-    // la bonne ligne qui intègre les projets :
-    // echo $twig->render('accueil.html.twig', ['projets' => $projets]);
-
+    include "controllers/projetsController.php";
+    affichageAccueil($twig, $pdo);
     break;
 
     case "ajoutprojet":
     echo $twig->render('ajoutprojet.html.twig');
     break;
     
-
-
     default :
         header('Location: /home');
     exit;       

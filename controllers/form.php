@@ -24,10 +24,10 @@ include "../models/BDD.php";
     elseif(!preg_match( '/^(http|https):\\/\\/[a-z0-9_]+([\\-\\.]{1}[a-z_0-9]+)*\\.[_a-z]{2,5}'.'((:[0-9]{1,5})?\\/.*)?$/i' ,$_POST['projeturl'])){
       echo json_encode("Erreur : l'URL c'est la base d'internet, tu deconnes, la !");
     }
-    elseif(!preg_match( '/^(http|https):\\/\\/[a-z0-9_]+([\\-\\.]{1}[a-z_0-9]+)*\\.[_a-z]{2,5}'.'((:[0-9]{1,5})?\\/.*)?$/i' ,$_POST['projetminiature'])){
+    elseif(empty($_POST['projetminiature'])){
       echo json_encode("Erreur : Mets une miniature, bordel !");
     }
-    elseif(!preg_match( '/^(http|https):\\/\\/[a-z0-9_]+([\\-\\.]{1}[a-z_0-9]+)*\\.[_a-z]{2,5}'.'((:[0-9]{1,5})?\\/.*)?$/i' ,$_POST['projetimage'])){
+    elseif(empty($_POST['projetimage'])){
       echo json_encode("Erreur : T'as pas mis d'image, il sera beau ton portfolio, tiens !");
     }
     elseif(!preg_match('#[a-z0-9-_."]{2,}#',$_POST['projetalt'])){
