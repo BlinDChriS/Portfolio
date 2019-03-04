@@ -205,7 +205,7 @@
                                 <img class="img-fluid d-block mx-auto" src="{{projet.image}}" alt="{{projet.alt}}">
                                 <p>{{projet.details | raw}}</p>
                                 <ul class="list-inline">
-                                    <li>Date: {{projet.dateprojet}}</li>
+                                    <li>Date: {{projet.dateprojet|date('m/Y')}}</li>
                                     <li>Client: {{projet.client}}</li>
                                     <li>Categorie: {{projet.categorie}}</li>
                                 </ul>

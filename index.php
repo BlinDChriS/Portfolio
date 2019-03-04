@@ -15,7 +15,6 @@ switch($id){
 
     case "home":
     include "models/BDD.php";
-
     include "controllers/projetsController.php";
     affichageAccueil($twig, $pdo);
     break;
