@@ -24,6 +24,7 @@
 
     <!--======================================== MON CSS ========================================-->
     <link rel="stylesheet" href="public/css/blindchris.css">
+
 </head>
 
 <body id="ajoutprojet">
@@ -76,11 +77,11 @@
                         </div>
                         <div class="form-group">
                             <label for="projetdescription">Description courte du projet</label>
-                            <textarea class="form-control" name="projetdescription" placeholder="Ajouter la description" required="required"></textarea>
+                            <input type="text" class="form-control" name="projetdescription" placeholder="Ajouter la description" required="required">
                         </div>
                         <div class="form-group">
                             <label for="projetdetails">Description détaillée du projet</label>
-                            <textarea class="form-control" name="projetdetails" placeholder="Ajouter la description" required="required"></textarea>
+                            <textarea id="editor" class="form-control" name="projetdetails" placeholder="Ajouter la description">Ce site web a été créé avec un framework <i>Bootstrap</i> sur un CMS <i>WordPress</i>.</textarea>
                         </div>
                         <div class="row">
                             <div class="col-12">
@@ -99,6 +100,8 @@
 <script src="public/js/popper.min.js"></script>
 <script src="public/js/bootstrap.min.js"></script>
 <script src="public/js/projet.js"></script>
+<script src="https://cloud.tinymce.com/5/tinymce.min.js"></script>
+<script src="public/js/editor.js"></script>
 
 </body>
 
