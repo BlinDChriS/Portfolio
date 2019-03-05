@@ -24,10 +24,13 @@ body {
   /* =====          Contact          ===== */
   /* ===================================== */
   /* ===================================== */
+  /* =====          Footer           ===== */
+  /* ===================================== */
+  /* ===================================== */
   /* =====       Ajout Projet        ===== */
   /* ===================================== */
   /* ===================================== */
-  /* =====          Footer           ===== */
+  /* =====     MENTIONS LEGALES      ===== */
   /* ===================================== */
 }
 body p {
@@ -685,8 +688,45 @@ body section#contact ::-webkit-input-placeholder, body section#contact :-moz-pla
   color: #ced4da;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+body footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+body footer span.copyright {
+  font-size: 90%;
+  line-height: 2.5em;
+  text-transform: none;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+body footer ul.quicklinks {
+  font-size: 90%;
+  line-height: 2.5em;
+  margin-bottom: 0;
+  text-transform: none;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+body ul.social-buttons {
+  margin-bottom: 0;
+}
+body ul.social-buttons li a {
+  font-size: 1.25em;
+  line-height: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
+  outline: none;
+  background-color: #27001c;
+}
+body ul.social-buttons li a:active, body ul.social-buttons li a:focus, body ul.social-buttons li a:hover {
+  background-color: #fed136;
+}
 body section#ajoutprojet {
-  background-color: #000815;
+  background-color: #27001c;
   background-image: url("../img/contact-image.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -727,42 +767,38 @@ body section#ajoutprojet ::-webkit-input-placeholder, body section#ajoutprojet :
   color: #ced4da;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-body footer {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  text-align: center;
-}
-body footer span.copyright {
-  font-size: 90%;
-  line-height: 2.5em;
-  text-transform: none;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-body footer ul.quicklinks {
-  font-size: 90%;
-  line-height: 2.5em;
-  margin-bottom: 0;
-  text-transform: none;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-body ul.social-buttons {
-  margin-bottom: 0;
-}
-body ul.social-buttons li a {
-  font-size: 1.25em;
-  line-height: 50px;
-  display: block;
-  width: 50px;
-  height: 50px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  color: white;
-  border-radius: 100%;
-  outline: none;
+body #mentionslegales {
   background-color: #27001c;
+  background-image: url("../img/contact-image.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
 }
-body ul.social-buttons li a:active, body ul.social-buttons li a:focus, body ul.social-buttons li a:hover {
-  background-color: #fed136;
+body #mentionslegales h2, body #mentionslegales h3 {
+  color: #fff;
+}
+body #mentionslegales p {
+  color: #fff;
+  font-size: 0.8em;
+}
+body #mentionslegales .twoColumns {
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+}
+@media (min-width: 991px) {
+  body #mentionslegales .twoColumns {
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
 }
 
 /*# sourceMappingURL=blindchris.css.map */
