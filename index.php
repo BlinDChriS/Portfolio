@@ -19,8 +19,12 @@ switch($id){
     affichageAccueil($twig, $pdo);
     break;
 
-    case "ajoutprojet":
+    case "maytheforcebewithyou":
     echo $twig->render('ajoutprojet.html.twig');
+    break;
+
+    case "mentionslegales":
+    echo $twig->render('mentionslegales.html.twig');
     break;
     
     default :
