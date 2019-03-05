@@ -37,12 +37,12 @@ body {
   section {
     padding: 100px 0;
     h2.section-heading {
-      font-size: 2.5em;
+      font-size: 2.5rem;
       margin-top: 0;
       margin-bottom: 15px;
     }
     h3.section-subheading {
-      font-size: 1em;
+      font-size: 1rem;
       font-weight: 400;
       font-style: italic;
       margin-bottom: 75px;
@@ -71,8 +71,8 @@ body {
   }
 
   .btn-xl {
-    font-size: 1.125em;
-    padding: 20px 2.5em;
+    font-size: 1.125rem;
+    padding: 20px 40px;
   }
 
   .btn-primary {
@@ -107,7 +107,7 @@ body {
   #mainNav {
     background-color: $background;
     .navbar-toggler {
-      font-size: 0.75em;
+      font-size: 0.75rem;
       right: 0;
       padding: 13px;
       text-transform: uppercase;
@@ -147,7 +147,7 @@ body {
       border: none;
       background-color: transparent;
       .navbar-brand {
-        font-size: 1.75em;
+        font-size: 1.75rem;
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
       }
@@ -165,7 +165,7 @@ body {
         padding-bottom: 0;
         background-color: $background;
         .navbar-brand {
-          font-size: 1.25em;
+          font-size: 1.25rem;
           padding: 12px 0;
         }
       }
@@ -203,7 +203,7 @@ body {
       padding-top: 250px;
       padding-bottom: 200px;
       .intro-lead-in {
-        font-size: 0.875em;
+        font-size: 0.875rem;
         font-style: italic;
         line-height: 22px;
         margin-bottom: 25px;
@@ -211,7 +211,7 @@ body {
       }
       .intro-heading {
         text-align: center !important;
-        font-size: 3.125em;
+        font-size: 3.125rem;
         font-weight: 700;
         line-height: 50px;
         margin-bottom: 25px;
@@ -230,14 +230,14 @@ body {
       padding-top: 250px;
       padding-bottom: 200px;
       .intro-lead-in {
-        font-size: 1.125em;
+        font-size: 1.125rem;
         font-style: italic;
         line-height: 20px;
         margin-top: 25px;
         font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
       }
       .intro-heading {
-        font-size: 4.688em;
+        font-size: 4.688rem;
         font-weight: 700;
         line-height: 75px;
         margin-bottom: 50px;
@@ -345,7 +345,7 @@ body {
             opacity: 1;
           }
           .portfolio-hover-content {
-            font-size: 1.25em;
+            font-size: 1.25rem;
             position: absolute;
             top: 50%;
             width: 100%;
@@ -398,13 +398,13 @@ body {
       padding: 100px 0;
       text-align: center;
       h2 {
-        font-size: 3em;
+        font-size: 3rem;
         margin-bottom: 15px;
       }
       p {
         margin-bottom: 30px;
         &.item-intro {
-          font-size: 1em;
+          font-size: 1rem;
           font-style: italic;
           margin: 20px 0 30px;
           font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -565,7 +565,7 @@ body {
         -o-transition : border 500ms ease-out;
         transition : border 500ms ease-out;
         h4 {
-          font-size: 0.625em;
+          font-size: 0.625rem;
           line-height: 14px;
           margin-top: 0.75em;
         }
@@ -632,7 +632,7 @@ body {
           height: 100px;
           margin-left: -50px;
           h4 {
-            font-size: 0.813em;
+            font-size: 0.813rem;
             line-height: 18px;
             margin-top: 16px;
           }
@@ -657,7 +657,7 @@ body {
         height: 150px;
         margin-left: -75px;
         h4 {
-          font-size: 1.125em;
+          font-size: 1.125rem;
           line-height: 26px;
           margin-top: 30px;
         }
@@ -768,7 +768,7 @@ body {
   ul.social-buttons {
     margin-bottom: 0;
     li a {
-      font-size: 1.25em;
+      font-size: 1.25rem;
       line-height: 50px;
       display: block;
       width: 50px;
@@ -839,7 +839,7 @@ body {
 
   #mentionslegales {
     h2,h3 {color: #fff}
-    p {color: #fff; font-size: 0.8em}
+    p {color: #fff; font-size: 0.8rem}
     background-color: $background;
     background-image: url("../img/contact-image.png");
     background-repeat: no-repeat;

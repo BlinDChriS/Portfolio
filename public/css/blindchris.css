@@ -53,12 +53,12 @@ body section {
   padding: 100px 0;
 }
 body section h2.section-heading {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 15px;
 }
 body section h3.section-subheading {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
   font-style: italic;
   margin-bottom: 75px;
@@ -98,8 +98,8 @@ body .btn {
   width: inherit;
 }
 body .btn-xl {
-  font-size: 1.125em;
-  padding: 20px 2.5em;
+  font-size: 1.125rem;
+  padding: 20px 40px;
 }
 body .btn-primary {
   background-color: rgba(255, 196, 0, 0.8);
@@ -125,7 +125,7 @@ body #mainNav {
   background-color: #27001c;
 }
 body #mainNav .navbar-toggler {
-  font-size: 0.75em;
+  font-size: 0.75rem;
   right: 0;
   padding: 13px;
   text-transform: uppercase;
@@ -163,7 +163,7 @@ body #mainNav .navbar-nav .nav-item .nav-link:active, body #mainNav .navbar-nav 
     background-color: transparent;
   }
   body #mainNav .navbar-brand {
-    font-size: 1.75em;
+    font-size: 1.75rem;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
@@ -182,7 +182,7 @@ body #mainNav .navbar-nav .nav-item .nav-link:active, body #mainNav .navbar-nav 
     transition: opacity 600ms, visibility 600ms;
   }
   body #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     padding: 12px 0;
   }
 }
@@ -214,7 +214,7 @@ body header.masthead .intro-text {
   padding-bottom: 200px;
 }
 body header.masthead .intro-text .intro-lead-in {
-  font-size: 0.875em;
+  font-size: 0.875rem;
   font-style: italic;
   line-height: 22px;
   margin-bottom: 25px;
@@ -222,7 +222,7 @@ body header.masthead .intro-text .intro-lead-in {
 }
 body header.masthead .intro-text .intro-heading {
   text-align: center !important;
-  font-size: 3.125em;
+  font-size: 3.125rem;
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 25px;
@@ -239,14 +239,14 @@ body header.masthead::after {
     padding-bottom: 200px;
   }
   body header.masthead .intro-text .intro-lead-in {
-    font-size: 1.125em;
+    font-size: 1.125rem;
     font-style: italic;
     line-height: 20px;
     margin-top: 25px;
     font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
   body header.masthead .intro-text .intro-heading {
-    font-size: 4.688em;
+    font-size: 4.688rem;
     font-weight: 700;
     line-height: 75px;
     margin-bottom: 50px;
@@ -331,7 +331,7 @@ body #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
 }
 body #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   position: absolute;
   top: 50%;
   width: 100%;
@@ -380,14 +380,14 @@ body .portfolio-modal .modal-content {
   text-align: center;
 }
 body .portfolio-modal .modal-content h2 {
-  font-size: 3em;
+  font-size: 3rem;
   margin-bottom: 15px;
 }
 body .portfolio-modal .modal-content p {
   margin-bottom: 30px;
 }
 body .portfolio-modal .modal-content p.item-intro {
-  font-size: 1em;
+  font-size: 1rem;
   font-style: italic;
   margin: 20px 0 30px;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -533,7 +533,7 @@ body .parcours > li .parcours-image {
   transition: border 500ms ease-out;
 }
 body .parcours > li .parcours-image h4 {
-  font-size: 0.625em;
+  font-size: 0.625rem;
   line-height: 14px;
   margin-top: 0.75em;
 }
@@ -591,7 +591,7 @@ body .parcours .parcours-body > ul, body .parcours .parcours-body > p {
     margin-left: -50px;
   }
   body .parcours > li .parcours-image h4 {
-    font-size: 0.813em;
+    font-size: 0.813rem;
     line-height: 18px;
     margin-top: 16px;
   }
@@ -614,7 +614,7 @@ body .parcours .parcours-body > ul, body .parcours .parcours-body > p {
     margin-left: -75px;
   }
   body .parcours > li .parcours-image h4 {
-    font-size: 1.125em;
+    font-size: 1.125rem;
     line-height: 26px;
     margin-top: 30px;
   }
@@ -710,7 +710,7 @@ body ul.social-buttons {
   margin-bottom: 0;
 }
 body ul.social-buttons li a {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   line-height: 50px;
   display: block;
   width: 50px;
@@ -780,7 +780,7 @@ body #mentionslegales h2, body #mentionslegales h3 {
 }
 body #mentionslegales p {
   color: #fff;
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
 body #mentionslegales .twoColumns {
   -webkit-column-gap: 20px;
