@@ -50,12 +50,12 @@ body section {
   padding: 100px 0;
 }
 body section h2.section-heading {
-  font-size: 40px;
+  font-size: 2.5em;
   margin-top: 0;
   margin-bottom: 15px;
 }
 body section h3.section-subheading {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
   font-style: italic;
   margin-bottom: 75px;
@@ -95,8 +95,8 @@ body .btn {
   width: inherit;
 }
 body .btn-xl {
-  font-size: 18px;
-  padding: 20px 40px;
+  font-size: 1.125em;
+  padding: 20px 2.5em;
 }
 body .btn-primary {
   background-color: rgba(255, 196, 0, 0.8);
@@ -122,7 +122,7 @@ body #mainNav {
   background-color: #27001c;
 }
 body #mainNav .navbar-toggler {
-  font-size: 12px;
+  font-size: 0.75em;
   right: 0;
   padding: 13px;
   text-transform: uppercase;
@@ -142,7 +142,7 @@ body #mainNav .navbar-brand.active, body #mainNav .navbar-brand:active, body #ma
 body #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 90%;
   font-weight: 400;
-  padding: 0.75em 0;
+  padding: 12px 0;
   letter-spacing: 1px;
   color: white;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -179,7 +179,7 @@ body #mainNav .navbar-nav .nav-item .nav-link:active, body #mainNav .navbar-nav 
     transition: opacity 600ms, visibility 600ms;
   }
   body #mainNav.navbar-shrink .navbar-brand {
-    font-size: 20px;
+    font-size: 1.25em;
     padding: 12px 0;
   }
 }
@@ -211,7 +211,7 @@ body header.masthead .intro-text {
   padding-bottom: 200px;
 }
 body header.masthead .intro-text .intro-lead-in {
-  font-size: 14px;
+  font-size: 0.875em;
   font-style: italic;
   line-height: 22px;
   margin-bottom: 25px;
@@ -219,7 +219,7 @@ body header.masthead .intro-text .intro-lead-in {
 }
 body header.masthead .intro-text .intro-heading {
   text-align: center !important;
-  font-size: 50px;
+  font-size: 3.125em;
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 25px;
@@ -236,14 +236,14 @@ body header.masthead::after {
     padding-bottom: 200px;
   }
   body header.masthead .intro-text .intro-lead-in {
-    font-size: 18px;
+    font-size: 1.125em;
     font-style: italic;
     line-height: 20px;
     margin-top: 25px;
     font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
   body header.masthead .intro-text .intro-heading {
-    font-size: 75px;
+    font-size: 4.688em;
     font-weight: 700;
     line-height: 75px;
     margin-bottom: 50px;
@@ -328,17 +328,17 @@ body #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
 }
 body #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-  font-size: 20px;
+  font-size: 1.25em;
   position: absolute;
   top: 50%;
   width: 100%;
   height: 20px;
-  margin-top: -12px;
+  margin-top: -0.75em;
   text-align: center;
   color: white;
 }
 body #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-  margin-top: -12px;
+  margin-top: -0.75em;
 }
 body #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3, body #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
   margin: 0;
@@ -355,7 +355,7 @@ body #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
 }
 body #portfolio .portfolio-item .portfolio-caption p {
-  font-size: 16px;
+  font-size: 1em;
   font-style: italic;
   margin: 0;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -377,14 +377,14 @@ body .portfolio-modal .modal-content {
   text-align: center;
 }
 body .portfolio-modal .modal-content h2 {
-  font-size: 48px;
+  font-size: 3em;
   margin-bottom: 15px;
 }
 body .portfolio-modal .modal-content p {
   margin-bottom: 30px;
 }
 body .portfolio-modal .modal-content p.item-intro {
-  font-size: 16px;
+  font-size: 1em;
   font-style: italic;
   margin: 20px 0 30px;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -475,7 +475,7 @@ body .parcours:before {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 40px;
+  left: 2.5em;
   width: 2px;
   margin-left: -1.5px;
   content: "";
@@ -530,9 +530,9 @@ body .parcours > li .parcours-image {
   transition: border 500ms ease-out;
 }
 body .parcours > li .parcours-image h4 {
-  font-size: 10px;
+  font-size: 0.625em;
   line-height: 14px;
-  margin-top: 12px;
+  margin-top: 0.75em;
 }
 body .parcours > li .parcours-image:hover {
   border: 7px solid #fed136;
@@ -588,7 +588,7 @@ body .parcours .parcours-body > ul, body .parcours .parcours-body > p {
     margin-left: -50px;
   }
   body .parcours > li .parcours-image h4 {
-    font-size: 13px;
+    font-size: 0.813em;
     line-height: 18px;
     margin-top: 16px;
   }
@@ -611,7 +611,7 @@ body .parcours .parcours-body > ul, body .parcours .parcours-body > p {
     margin-left: -75px;
   }
   body .parcours > li .parcours-image h4 {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 26px;
     margin-top: 30px;
   }
@@ -632,7 +632,7 @@ body .parcours .parcours-body > ul, body .parcours .parcours-body > p {
     margin-left: -85px;
   }
   body .parcours > li .parcours-image h4 {
-    margin-top: 40px;
+    margin-top: 2.5em;
   }
   body .parcours > li.parcours-inverted > .parcours-panel {
     padding: 0 100px 20px 20px;
@@ -734,13 +734,13 @@ body footer {
 }
 body footer span.copyright {
   font-size: 90%;
-  line-height: 40px;
+  line-height: 2.5em;
   text-transform: none;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 body footer ul.quicklinks {
   font-size: 90%;
-  line-height: 40px;
+  line-height: 2.5em;
   margin-bottom: 0;
   text-transform: none;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -749,7 +749,7 @@ body ul.social-buttons {
   margin-bottom: 0;
 }
 body ul.social-buttons li a {
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 50px;
   display: block;
   width: 50px;

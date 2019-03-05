@@ -63,13 +63,15 @@
                             <label for="projeturl">URL du site du projet</label>
                             <input type="text" class="form-control" name="projeturl" placeholder="http://" value="http://">
                         </div>
-                        <div class="form-group">
-                            <label for="projetminiature">Fichier de la miniature (image)</label>
-                            <input type="text" class="form-control" name="projetminiature" placeholder="http://" value="http://">
-                        </div>
-                        <div class="form-group">
-                            <label for="projetimage">Fichier de l'aperçu (image)</label>
-                            <input type="text" class="form-control" name="projetimage" placeholder="http://" value="http://">
+                        <div class="form-row">
+                            <div class="col-lg-6 form-group">
+                                <label for="projetminiature">Fichier de la miniature (image)</label>
+                                <input type="text" class="form-control" name="projetminiature" placeholder="*-thumbnail.jpg" value="-thumbnail.jpg">
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <label for="projetimage">Fichier de l'aperçu (image)</label>
+                                <input type="text" class="form-control" name="projetimage" placeholder="*-full.jpg" value="-full.jpg">
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="projetalt">Texte de remplacement des images</label>
