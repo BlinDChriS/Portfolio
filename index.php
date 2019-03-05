@@ -19,7 +19,7 @@ switch($id){
     affichageAccueil($twig, $pdo);
     break;
 
-    case "maytheforcebewithyou":
+    case "ajoutprojet":
     echo $twig->render('ajoutprojet.html.twig');
     break;
 
