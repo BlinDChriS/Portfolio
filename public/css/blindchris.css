@@ -121,6 +121,9 @@ body ::-moz-selection, body ::selection {
 body img::-moz-selection, body img::selection, body img::-moz-selection {
   background: transparent;
 }
+body .tox .tox-notification--in {
+  display: none;
+}
 body #mainNav {
   background-color: #27001c;
 }
