@@ -470,11 +470,21 @@ body {
 
   #about {
     h2,h3, p {color: #fff}
+    a {color: $lightgrey}
+    a:hover {color: $primarycolor; text-decoration: none}
     background-image: url("../img/about-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
+
+    .aboutimg {
+      background-image: url("../img/twosouls.png");
+      background-position: center;
+      background-size: cover;
+      height: 300px;
+      cursor: pointer;
+    }
 
     .twoColumns{
       -webkit-column-gap: 20px;

@@ -451,6 +451,20 @@ body #about {
 body #about h2, body #about h3, body #about p {
   color: #fff;
 }
+body #about a {
+  color: #ced4da;
+}
+body #about a:hover {
+  color: #fed136;
+  text-decoration: none;
+}
+body #about .aboutimg {
+  background-image: url("../img/twosouls.png");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  cursor: pointer;
+}
 body #about .twoColumns {
   -webkit-column-gap: 20px;
   -moz-column-gap: 20px;
