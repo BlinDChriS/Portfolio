@@ -10,7 +10,7 @@ $id=$uriExplode[2];
 switch($id){
 
     case "":
-    header('Location: /blindchrisportfolio/home');
+    header('Location: /home');
     break;
 
     case "home":
