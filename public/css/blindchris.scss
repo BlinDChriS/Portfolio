@@ -204,8 +204,8 @@ body {
     background-position: center center;
     background-size: cover;
     .intro-text {
-      padding-top: 250px;
-      padding-bottom: 200px;
+      padding-top: 38vh;
+      padding-bottom: 35vh;
       .intro-lead-in {
         font-size: 0.875rem;
         font-style: italic;
@@ -281,46 +281,48 @@ body {
   /* =====         SERVICES          ===== */
   /* ===================================== */
 
-  .service {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      -webkit-transform: perspective(1px) translateZ(0);
-      transform: perspective(1px) translateZ(0);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-property: transform;
-      transition-property: transform;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-      &:hover {
-          -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-          -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
+  #services {
+    .service {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        &:hover {
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+          }
+    }
+
+    .service-heading {
+      margin: 15px 0;
+      text-transform: none;
+    }
+
+    .spin {
+            -webkit-transition: -webkit-transform .3s ease-in-out;
+            transition:         
+            transform .3s ease-in-out;
+        &:hover {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+            color: white;
+        }
+    }
+
+    .hover:hover{
+                -webkit-transform: translateY(-5px);
+                transform: translateY(-5px);
         }
   }
-
-  .service-heading {
-    margin: 15px 0;
-    text-transform: none;
-  }
-
-  .spin {
-          -webkit-transition: -webkit-transform .3s ease-in-out;
-          transition:         
-          transform .3s ease-in-out;
-      &:hover {
-          -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-          color: white;
-      }
-  }
-
-  .hover:hover{
-              -webkit-transform: translateY(-5px);
-              transform: translateY(-5px);
-      }
 
 
   /* ===================================== */
