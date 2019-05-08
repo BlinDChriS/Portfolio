@@ -362,6 +362,8 @@ body {
           -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
           background-color: #27001c; }
+  body .button {
+    margin: 5px !important; }
   body .buttonlnk {
     color: #fff; }
     body .buttonlnk:hover {
