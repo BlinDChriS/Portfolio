@@ -76,6 +76,7 @@ body {
   }
 
   .btn-primary {
+    margin: 5px !important;
     background-color: $primarycolordarker;
     border-color: $primarycolordarker;
     &:active, &:focus, &:hover {
@@ -485,10 +486,6 @@ body {
         }
       }
     }
-  }
-
-  .button {
-    margin: 5px !important;
   }
 
   .buttonlnk {

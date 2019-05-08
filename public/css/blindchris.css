@@ -84,6 +84,7 @@ body {
     font-size: 1.125rem;
     padding: 20px 40px; }
   body .btn-primary {
+    margin: 5px !important;
     background-color: rgba(255, 196, 0, 0.8);
     border-color: rgba(255, 196, 0, 0.8); }
     body .btn-primary:active, body .btn-primary:focus, body .btn-primary:hover {
@@ -362,8 +363,6 @@ body {
           -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
           background-color: #27001c; }
-  body .button {
-    margin: 5px !important; }
   body .buttonlnk {
     color: #fff; }
     body .buttonlnk:hover {
