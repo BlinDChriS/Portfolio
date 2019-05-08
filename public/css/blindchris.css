@@ -100,6 +100,17 @@ body {
     background: transparent; }
   body .tox .tox-notification--in {
     display: none; }
+  body .come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards; }
+  body .come-in:nth-child(odd) {
+    animation-duration: 0.6s; }
+  body .already-visible {
+    transform: translateY(0);
+    animation: none; }
+@keyframes come-in {
+  to {
+    transform: translateY(0); } }
   body #mainNav {
     background-color: #27001c; }
     body #mainNav .navbar-toggler {
@@ -369,11 +380,20 @@ body {
       color: #fed136;
       text-decoration: none; }
     body #about .aboutimg {
+      font-family: Verdana, Geneva, Tahoma, sans-serif !important;
       background-image: url("../img/twosouls.png");
       background-position: center;
       background-size: cover;
       height: 300px;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: 0.5s ease; }
+      body #about .aboutimg span {
+        background-color: #27001c; }
+      body #about .aboutimg:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        transition: 0.5s ease; }
     body #about .twoColumns {
       -webkit-column-gap: 20px;
       -moz-column-gap: 20px;

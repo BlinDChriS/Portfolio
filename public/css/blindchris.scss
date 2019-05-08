@@ -104,6 +104,31 @@ body {
     display:none;
 }
 
+
+
+
+ 
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+
+
+
+
+
   /* ===================================== */
   /* =====           NAVBAR          ===== */
   /* ===================================== */
@@ -485,11 +510,22 @@ body {
     background-size: cover;
 
     .aboutimg {
+      font-family: Verdana, Geneva, Tahoma, sans-serif !important;
       background-image: url("../img/twosouls.png");
       background-position: center;
       background-size: cover;
       height: 300px;
       cursor: pointer;
+      transition: 0.5s ease;
+      span {
+        background-color: #27001c;
+      }
+      &:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        transition: 0.5s ease;
+      }
     }
 
     .twoColumns{
